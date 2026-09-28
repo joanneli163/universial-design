@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1: Porcelain Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-slate-800">
+    <header class="sticky top-0 bg-stone-50 border-b border-stone-200">
+        <h1 class="sr-only">Joanne's Webpage</h1>
+        <nav class="max-w-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" aria-labelledby="main-navigation-label">
+            <h2 id="main-navigation-label" class="sr-only">Main navigation</h2>
+            <a href="index.html" class="text-xl font-bold text-slate-900">Home</a>
+
+            <ul class="flex gap-7 text-sm text-slate-500">
+                <li><a href="assignment-1.html" class="hover:text-teal-700">Assignment 1</a></li>
+                <li><a href="#assignment-2" class="hover:text-teal-700">Assignment 2</a></li>
+                <li><a href="#assignment-3" class="hover:text-teal-700">Assignment 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="max-w-2xl mx-auto px-6">
+        <article aria-labelledby="page-title">
+            <h1 id="page-title" class="text-4xl font-bold text-slate-900 mb-6">Porcelain</h1>
+            <!-- Table of Contents -->
+            <nav class="pb-16" aria-labelledby="contents-heading">
+                <h2 id="contents-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Contents</h2>
+                <ol class="list-decimal pl-5 space-y-1">
+                    <li><a href="#overview" class="hover:text-teal-700">Overview</a></li>
+                    <li>
+                        <a href="#types" class="hover:text-teal-700">Types</a>
+                        <ol class="list-disc pl-5 mt-1 space-y-1">
+                            <li><a href="#hard-paste" class="hover:text-teal-700">Hard Paste</a></li>
+                            <li><a href="#soft-paste" class="hover:text-teal-700">Soft Paste</a></li>
+                            <li><a href="#bone-china" class="hover:text-teal-700">Bone China</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#materials" class="hover:text-teal-700">Materials</a></li>
+                    <li>
+                        <a href="#production" class="hover:text-teal-700">Production</a>
+                        <ol class="list-disc pl-5 mt-1 space-y-1">
+                            <li><a href="#forming" class="hover:text-teal-700">Forming</a></li>
+                            <li><a href="#decoration" class="hover:text-teal-700">Decoration</a></li>
+                            <li><a href="#firing" class="hover:text-teal-700">Firing</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#history" class="hover:text-teal-700">History</a>
+                        <ol class="list-disc pl-5 mt-1 space-y-1">
+                            <li><a href="#chinese-porcelain" class="hover:text-teal-700">Chinese Porcelain</a></li>
+                            <li><a href="#japanese-porcelain" class="hover:text-teal-700">Japanese Porcelain</a></li>
+                            <li><a href="#korean-porcelain" class="hover:text-teal-700">Korean Porcelain</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#application" class="hover:text-teal-700">Application</a>
+                        <ol class="list-disc pl-5 mt-1 space-y-1">
+                            <li><a href="#electric-insulators" class="hover:text-teal-700">Electric Insulators</a></li>
+                            <li><a href="#chemical-procelain" class="hover:text-teal-700">Chemical Porcelain</a></li>
+                            <li><a href="#tiles" class="hover:text-teal-700">Tiles</a></li>
+                            <li><a href="#sanitaryware" class="hover:text-teal-700">Sanitaryware</a></li>
+                            <li><a href="#dental-procelain" class="hover:text-teal-700">Dental Porcelain</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Overview -->
+            <section id="overview" class="pb-16" aria-labelledby="overview-heading">
+                <h2 id="overview-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Overview</h2>
+                <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                    <img src="pictures/ru-ci.png" alt="Chinese Ru ware celadon-glazed bottle vase, Northern Song, 11th-12th century" class="w-full h-48 object-cover rounded-md border border-stone-200 bg-stone-100">
+                    <figcaption class="mt-2 text-xs text-slate-500">Chinese Ru ware celadon-glazed bottle vase, Northern Song, 11th-12th century</figcaption>
+                </figure>
+                <aside class="sm:float-right sm:ml-6 sm:w-56 mb-4 rounded border border-stone-200 bg-white p-4 text-sm clear-right" aria-labelledby="infobox-h">
+                    <h3 id="infobox-h" class="font-semibold text-slate-900 mb-1">Chinese name</h3>
+                    <p class="text-4xl text-slate-900 mb-2" lang="zh">瓷</p>
+                    <dl class="space-y-1">
+                        <dt class="font-semibold text-slate-900">Hanyu Pinyin</dt><dd lang="zh-Latn">cí</dd>
+                        <dt class="font-semibold text-slate-900">Wade-Giles</dt><dd>tz'ŭ²</dd>
+                        <dt class="font-semibold text-slate-900">Cantonese (Yale)</dt><dd>chìh</dd>
+                        <dt class="font-semibold text-slate-900">Cantonese (Jyutping)</dt><dd>ci4</dd>
+                        <dt class="font-semibold text-slate-900">Southern Min (Tâi-lô)</dt><dd>hûi</dd>
+                    </dl>
+                </aside>
+                <p class="mb-4 max-w-prose">
+                    <dfn>Porcelain</dfn>, also called <dfn>china</dfn>, is a ceramic material made by heating raw materials, generally including kaolinite, in a kiln to temperatures between 1,200 and 1,400 °C (2,200 and 2,600 °F). The greater strength and translucence of porcelain, relative to other types of pottery, arise mainly from vitrification and the formation of the mineral mullite within the body at these high temperatures. End applications include tableware, decorative ware such as figurines, and products in technology and industry such as electrical insulators and laboratory ware.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    The manufacturing process used for porcelain is similar to that used for earthenware and stoneware, the two other main types of pottery, although it can be more challenging to produce. It has usually been regarded as the most prestigious type of pottery due to its delicacy, strength, and high degree of whiteness. It is frequently both glazed and decorated.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    Though definitions vary, porcelain can be divided into three main categories: hard-paste, soft-paste, and bone china. The categories differ in the composition of the body and the firing conditions.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    Porcelain originated in China, the result of centuries of ceramic experimentation by Chinese potters. Depending on the definition used, the technology matured between approximately 200 and 800 CE. It later spread to other countries in Asia, then to Europe, and eventually to the rest of the world. The European name, porcelain in English, comes from the old Italian porcellana (cowrie shell) because of its resemblance to the surface of the shell.[1] Porcelain is also referred to as "china" or fine china in some English-speaking countries, as it was first seen in imports from China during the 17th century.[2] Properties associated with porcelain include low permeability and elasticity; considerable strength, hardness, whiteness, translucency, and resonance; and a high resistance to corrosive chemicals and thermal shock.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    Porcelain has been described as being "completely vitrified, hard, impermeable (even before glazing), white or artificially coloured, translucent (except when of considerable thickness), and resonant".[3] However, the term "porcelain" lacks a universal definition and has "been applied in an unsystematic fashion to substances of diverse kinds that have only certain surface-qualities in common".[4]
+                </p>
+                <p class="mb-4 max-w-prose">
+                    Traditionally, East Asia only classifies pottery into low-fired wares (earthenware) and high-fired wares (often translated as porcelain), the latter also including what Europeans call "stoneware", which is high-fired but not generally white or translucent. Terms such as "proto-porcelain", "porcellaneous", or "near-porcelain" may be used in cases where the ceramic body approaches whiteness and translucency.[5]
+                </p>
+                <p class="mb-4 max-w-prose">
+                    In 2021, the global market for porcelain tableware was estimated to be worth US$22.1 billion.[6]
+                </p>
+            </section>
+
+            <!-- Types -->
+             <section id="types" class="pb-16" aria-labelledby="types-heading">
+                <h2 id="types-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Types</h2>
+                <!-- hard-paste -->
+                <section id="hard-paste" class="mb-4" aria-labelledby="hard-paste-heading">
+                    <h3 id="hard-paste-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Hard-paste</h3>
+                    <p class="mb-4 max-w-prose">
+                        Hard-paste porcelain was invented in China, and it was also used in Japanese porcelain. Most of the finest quality porcelain wares are made of this material. The earliest European porcelains were produced at the Meissen factory in the early 18th century; they were formed from a paste composed of kaolin and alabaster and fired at temperatures up to 1,400 °C (2,552 °F) in a wood-fired kiln, producing a porcelain of great hardness, translucency, and strength.[7] Later, the composition of the Meissen hard paste was changed, and the alabaster was replaced by feldspar and quartz, allowing the pieces to be fired at lower temperatures. Kaolinite, feldspar, and quartz (or other forms of silica) continue to constitute the basic ingredients for most continental European hard-paste porcelains.
+                    </p>
+                </section>
+                <!-- soft-paste -->
+                <section id="soft-paste" class="mb-4" aria-labelledby="soft-paste-heading">
+                    <h3 id="soft-paste-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Soft-Paste</h3>
+                    <p class="mb-4 max-w-prose">
+                        Soft-paste porcelain, also known as artificial porcelain, is made from a mixture of clay and a glassy substance such as frit. It is fired at lower temperatures than hard-paste porcelain, resulting in a softer, less durable material that is often more easily shaped and decorated.
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Formulations were later developed based on kaolin with quartz, feldspars, nepheline syenite, or other feldspathic rocks. These are technically superior and continue to be produced. Soft-paste porcelains are fired at lower temperatures than hard-paste porcelains; therefore, these wares are generally less hard than hard-paste porcelains.[8][9]
+                    </p>
+                    <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6 items-start" aria-label="soft-paste and European porcelain examples">
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/soft-paste-1.jpg" alt="Allegorie van de herfst - onbekend - KU Leuven Kunstpatrimonium">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Allegorie van de herfst - onbekend - KU Leuven Kunstpatrimonium</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/soft-paste-2.jpg" alt="Soft-paste porcelain swan tureen, 1752-1756, Chelsea porcelain">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Soft-paste porcelain swan tureen, 1752-1756, Chelsea porcelain</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/soft-paste-3.jpg" alt="Flower centrepiece, 18th century, Spain">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Flower centrepiece, 18th century, Spain</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/soft-paste-4.jpg" alt="Nymphenburg porcelain group modelled by Franz Anton Bustelli, 1756">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Nymphenburg porcelain group modelled by Franz Anton Bustelli, 1756</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    </section>
+                <!-- bone china -->
+                <section id="bone-china" class="mb-4" aria-labelledby="bone-china-heading">
+                    <h3 id="bone-china-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Bone China</h3>
+                    <p class="mb-4 max-w-prose">
+                        Although originally developed in England in 1748[10] to compete with imported porcelain, bone china is now made worldwide, including in China. The English had read the letters of Jesuit missionary François Xavier d'Entrecolles, which described Chinese porcelain manufacturing secrets in detail.[11] One writer has speculated that a misunderstanding of the text could possibly have been responsible for the first attempts to use bone-ash as an ingredient in English porcelain,[11] although this is not supported by modern researchers and historians.[12][13][14][15][16]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Traditionally, English bone china was made from two parts of bone ash, one part of kaolin, and one part of china stone, although the latter has been replaced by feldspars from non-UK sources.[17]
+                    </p>
+                </section>
+            </section>
+
+            <!-- Material -->
+            <section id="materials" class="pb-16" aria-labelledby="material-heading">
+                <h2 id="material-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Material</h2>
+                <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                    <figure class="mb-4">
+                        <img src="pictures/material-1.jpg" alt="Demonstration of the translucent quality of porcelain" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                        <figcaption class="mt-2 text-xs text-slate-500">Demonstration of the translucent quality of porcelain</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="pictures/material-2.jpg" alt="A lithophane exploits the translucency of porcelain" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                        <figcaption class="mt-2 text-xs text-slate-500">A lithophane exploits the translucency of porcelain</figcaption>
+                    </figure>
+                </figure>
+                <p class="mb-4 max-w-prose">
+                    Kaolin is the primary material from which porcelain is made, even though clay minerals might account for only a small proportion of the whole. The word paste is an old term for both unfired and fired materials. A more common terminology for the unfired material is "body"; for example, when buying materials a potter might order an amount of porcelain body from a vendor.                
+                </p>
+                <p class="mb-4 max-w-prose">
+                    The composition of porcelain is highly variable, but the clay mineral kaolinite is often a raw material. Other raw materials can include feldspar, ball clay, glass, bone ash, steatite, quartz, petuntse and alabaster.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    The clays used are often described as being long or short, depending on their plasticity. Long clays are cohesive (sticky) and have high plasticity; short clays are less cohesive and have lower plasticity. In soil mechanics, plasticity is determined by measuring the increase in content of water required to change a clay from a solid state bordering on the plastic, to a plastic state bordering on the liquid, though the term is also used less formally to describe the ease with which a clay may be worked.
+                </p>
+                <p class="mb-4 max-w-prose">
+                    Clays used for porcelain are generally of lower plasticity than many other pottery clays. They wet very quickly, meaning that small changes in the content of water can produce large changes in workability. Thus, the range of water content within which these clays can be worked is very narrow and consequently must be carefully controlled.
+                </p>
+            </section>
+
+            <!-- Production -->
+            <section id="production" class="pb-16" aria-labelledby="production-heading">
+                <h2 id="production-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Production</h2>
+                <section id="forming" aria-labelledby="forming-heading">
+                    <h3 id="forming-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Forming</h3>
+                    <p class="mb-4 max-w-prose">
+                        Porcelain can be made using all the shaping techniques for pottery.
+                    </p>
+                </section>
+                <section id="glazing" aria-labelledby="glazing-heading">
+                    <h3 id="glazing-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Glazing</h3>
+                    <p class="mb-4 max-w-prose">
+                        Biscuit porcelain is unglazed porcelain treated as a finished product, mostly for figures and sculpture. Unlike their lower-fired counterparts, porcelain wares do not need glazing to render them impermeable to liquids and for the most part are glazed for decorative purposes and to make them resistant to dirt and staining. Many types of glaze, such as the iron-containing glaze used on the celadon wares of Longquan, were designed specifically for their striking effects on porcelain.
+                    </p>
+                </section>
+                <section id="decoration" aria-labelledby="decoration-heading">
+                    <h3 id="decoration-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Decoration</h3>
+                    <p class="mb-4 max-w-prose">
+                        Porcelain often receives underglaze decoration using pigments that include cobalt oxide and copper, or overglaze enamels, allowing a wider range of colours. Like many earlier wares, modern porcelains are often biscuit-fired at around 1,000 °C (1,830 °F), coated with glaze and then sent for a second glaze-firing at a temperature of about 1,300 °C (2,370 °F) or greater. Another early method is "once-fired", where the glaze is applied to the unfired body and the two fired together in a single operation.
+                    </p>
+                </section>
+                <section id="firing" aria-labelledby="firing-heading">
+                    <h3 id="firing-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Firing</h3>
+                    <p class="mb-4 max-w-prose">
+                        In this process, "green" (unfired) ceramic wares are heated to high temperatures in a kiln to permanently set their shapes, vitrify the body and the glaze. Porcelain is fired at a higher temperature than earthenware so that the body can vitrify and become non-porous. Many types of porcelain in the past have been fired twice or even three times, to allow decoration using less robust pigments in overglaze enamel.
+                    </p>
+                </section>
+            </section>
+
+            <!-- History -->
+            <section id="history" aria-labelledby="history-heading">
+                <h2 id="history-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">History</h2>
+                
+                <!-- Chinese Porcelain Section -->
+                <section id="chinese-porcelain" aria-labelledby="chinese-porcelain-heading">
+                    <h3 id="chinese-porcelain-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Chinese Porcelain</h3>
+                    <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                        <figure class="mb-4">
+                            <img src="pictures/chinese-1.jpg" alt="Jingdezhen blue and white porcelain vase, Qing dynasty, Kangxi period (late 17th century). Metropolitan Museum of Art." class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                            <figcaption class="mt-2 text-xs text-slate-500">Jingdezhen blue and white porcelain vase, Qing dynasty, Kangxi period (late 17th century). Metropolitan Museum of Art.</figcaption>
+                        </figure>
+                    </figure>
+                    <p class="mb-4 max-w-prose">
+                        Porcelain was invented in China over a centuries-long development period beginning with "proto-porcelain" wares dating from the Shang dynasty (1600–1046 BCE). By the time of the Eastern Han dynasty (25–220 CE) these early glazed ceramic wares had developed into porcelain, which Chinese defined as high-fired ware.[18][19] By the late Sui dynasty (581–618 CE) and early Tang dynasty (618–907 CE), the now-standard requirements of whiteness and translucency had been achieved,[20] in types such as Ding ware. The wares were already exported to the Islamic world, where they were highly prized.[19][21]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Eventually, porcelain and the expertise required to create it began to spread into other areas of East Asia. During the Song dynasty (960–1279 CE), artistry and production had reached new heights. The manufacture of porcelain became highly organised, and the dragon kilns excavated from this period could fire as many as 25,000 pieces at a time,[22] and over 100,000 by the end of the period.[23] While Xing ware is regarded as among the greatest of the Tang dynasty porcelain, Ding ware became the premier porcelain of the Song dynasty.[24] By the Ming dynasty, production of the finest wares for the court was concentrated in a single city, and Jingdezhen porcelain, originally owned by the imperial government, remains the centre of Chinese porcelain production.
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        By the time of the Ming dynasty (1368-1644 CE), porcelain wares were being exported to Asia and Europe. Some of the most well-known Chinese porcelain art styles arrived in Europe during this era, such as the coveted "blue-and-white" wares.[25] The Ming dynasty controlled much of the porcelain trade, which was expanded to Asia, Africa and Europe via the Silk Road. In 1517, Portuguese merchants began direct trade by sea with the Ming dynasty, and in 1598, Dutch merchants followed.[21]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Some porcelains were more highly valued than others in imperial China. The most valued types can be identified by their association with the court, either as tribute offerings, or as products of kilns under imperial supervision.[26] Since the Yuan dynasty, the largest and best centre of production has made Jingdezhen porcelain. During the Ming dynasty, Jingdezhen porcelain had become a source of imperial pride. The Yongle emperor erected a white porcelain brick-faced pagoda at Nanjing, and an exceptionally smoothly glazed type of white porcelain is peculiar to his reign. Jingdezhen porcelain's fame came to a peak during the Qing dynasty.
+                    </p>
+                    <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6 items-start" aria-label="soft-paste and European porcelain examples">
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-2.jpg" alt="Jun ware miniature incense burner with blue glaze, Song-Yuan dynasty (12th-14th century). Metropolitan Museum of Art.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Jun ware miniature incense burner with blue glaze, Song-Yuan dynasty (12th-14th century). Metropolitan Museum of Art.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-3.png" alt="Doucai Chicken Cup (Chenghua), Ming, 1465-1487 CE">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Doucai Chicken Cup (Chenghua), Ming, 1465-1487 CE</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-4.jpg" alt="Jingdezhen imperial famille rose dish, Qing dynasty, Yongzheng period (1723-1735). Walters Art Museum.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Jingdezhen imperial famille rose dish, Qing dynasty, Yongzheng period (1723-1735). Walters Art Museum.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-5.jpg" alt="Famille rose bowl with lotus design on pink ground, Qing dynasty, Qianlong period (1736-1795). National Palace Museum, Taipei.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Famille rose bowl with lotus design on pink ground, Qing dynasty, Qianlong period (1736-1795). National Palace Museum, Taipei.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-6.jpg" alt="Ding ware pillow in the shape of a recumbent child, Northern Song dynasty (12th century). National Palace Museum, Taipei.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Ding ware pillow in the shape of a recumbent child, Northern Song dynasty (12th century). National Palace Museum, Taipei.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-7.jpg" alt="Yaozhou ware sky-blue glazed water dropper in the shape of a flying fish, Five Dynasties period (907-960). Liaoning Provincial Museum.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Yaozhou ware sky-blue glazed water dropper in the shape of a flying fish, Five Dynasties period (907-960). Liaoning Provincial Museum.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-8.jpg" alt="Gallbladder-shaped vase decorated with peony on a blue ground in painted enamels, Qing dynasty, Kangxi period (1662-1722). National Palace Museum.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Gallbladder-shaped vase decorated with peony on a blue ground in painted enamels, Qing dynasty, Kangxi period (1662-1722). National Palace Museum.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-9.png" alt="Cobalt blue glazed cong-shaped vase, Qing dynasty. National Palace Museum.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Cobalt blue glazed cong-shaped vase, Qing dynasty. National Palace Museum.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-10.jpg" alt="Jingdezhen blue and white censer in the form of a mythical beast, Ming dynasty (early 17th century). Metropolitan Museum of Art.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Jingdezhen blue and white censer in the form of a mythical beast, Ming dynasty (early 17th century). Metropolitan Museum of Art.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/chinese-11.jpg" alt="The Fonthill Vase, earliest Chinese porcelain object to have reached Europe, Chinese gift for Louis the Great of Hungary in 1338.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">The Fonthill Vase is the earliest Chinese porcelain object to have reached Europe. It was a Chinese gift for Louis the Great of Hungary in 1338.</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Japanese Porcelain Section -->
+                <section id="japanese-porcelain" aria-labelledby="japanese-porcelain-heading">
+                    <h3 id="japanese-porcelain-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Japanese Porcelain</h3>
+                    <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                        <figure class="mb-4">
+                            <img src="pictures/japanese-1.jpg" alt="A contemporary Japanese porcelain goblet (in the middle of the Go board) and a Chinese teapot and its cups (on the side)" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                            <figcaption class="mt-2 text-xs text-slate-500">A contemporary Japanese porcelain goblet (in the middle of the Go board) and a Chinese teapot and its cups (on the side)</figcaption>
+                        </figure>
+                    </figure>
+                    <p class="mb-4 max-w-prose">
+                        Although the Japanese elite were keen importers of Chinese porcelain from early on, they were not able to make their own until the arrival of Korean potters that were taken captive during the Japanese invasions of Korea (1592–1598). They brought an improved type of kiln, and one of them spotted a source of porcelain clay near Arita, and before long several kilns had started in the region. At first their wares were similar to the cheaper and cruder Chinese porcelains with underglaze blue decoration that were already widely sold in Japan; this style was to continue for cheaper everyday wares until the 20th century.[27]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Exports to Europe began around 1660, through the Chinese and the Dutch East India Company, the only Europeans allowed a trading presence. Chinese exports had been seriously disrupted by civil wars as the Ming dynasty fell apart, and the Japanese exports increased rapidly to fill the gap. At first the wares used European shapes and mostly Chinese decoration, as the Chinese had done, but gradually original Japanese styles developed.
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Nabeshima ware was produced in kilns owned by the families of feudal lords, and were decorated in the Japanese tradition, much of it related to textile design. This was not initially exported, but used for gifts to other aristocratic families. Imari ware and Kakiemon are broad terms for styles of export porcelain with overglaze "enamelled" decoration begun in the early period, both with many sub-types.[28]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        A great range of styles and manufacturing centres were in use by the start of the 19th century, and as Japan opened to trade in the second half, exports expanded hugely and quality generally declined. Much traditional porcelain continues to replicate older methods of production and styles, and there are several modern industrial manufacturers.[29] By the early 1900s, Filipino porcelain artisans working in Japanese porcelain centres for much of their lives, later on introduced the craft into the native population in the Philippines,[30] although oral literature from Cebu in the central Philippines have noted that porcelain were already being produced by the natives locally during the time of Cebu's early rulers, prior to the arrival of colonizers in the 16th century.[31]
+                    </p>
+                    <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6 items-start">
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/japanese-2.jpg" alt="Hirado ware okimono (figurine) of a lion with a ball, Japan, 19th century">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Hirado ware okimono (figurine) of a lion with a ball, Japan, 19th century</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/japanese-3.jpg" alt="Nabeshima ware dish with hydrangeas, c. 1680-1720, Arita, Okawachi kilns, hard-paste porcelain with cobalt and enamels">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Nabeshima ware dish with hydrangeas, c. 1680-1720, Arita, Okawachi kilns, hard-paste porcelain with cobalt and enamels</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/japanese-4.jpg" alt="Japanese doucai-style bowl with floral design and tall foot ring, modern period">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Japanese doucai-style bowl with floral design and tall foot ring, modern period</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/japanese-5.jpg" alt="Japanese Imari ware dish with landscape, figures, and floral decoration in underglaze blue, iron-red, and gold, early 18th century. Hallwyl Museum, Stockholm.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Japanese Imari ware dish with landscape, figures, and floral decoration in underglaze blue, iron-red, and gold, early 18th century. Hallwyl Museum, Stockholm.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/japanese-6.jpg" alt="Black Raku tea bowl 'Shōrei' (Aged Pine) with crane design, by Raku IX (Ryōnyū), Edo period (c. 1810-1838). Los Angeles County Museum of Art.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Black Raku tea bowl "Shōrei" (Aged Pine) with crane design, by Raku IX (Ryōnyū), Edo period (c. 1810-1838). Los Angeles County Museum of Art.</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Korean Porcelain Section -->
+                <section id="korean-porcelain" aria-labelledby="korean-porcelain-heading">
+                    <h3 id="korean-porcelain-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Korean Porcelain</h3>
+                    <p class="mb-4 max-w-prose">
+                        Olive green glaze was introduced in the late Silla Dynasty. Most ceramics from Silla are generally leaf-shaped, which is a very common shape in Korea. Korean celadon comes in a variety of colors, from turquoise to putty. Additionally, in the late 13th century, the inlay technique of expressing pigmented patterns by filling the hollow parts of pottery with white and red clay was frequently used.[32] The main difference from those in China is that many specimens have inlay decoration under the glaze.[33]
+                    </p>
+                    <p class="mb-4 max-w-prose">
+                        Most Korean ceramics from the Joseon Dynasty are of excellent decorative quality. It usually has a melon shape and is asymmetrical.[33]
+                    </p>
+                    <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6 items-start">
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/korean-1.jpg" alt="Jar and tall stand with perforated base (in Silla)">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Jar and tall stand with perforated base (in Silla)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/korean-2.jpg" alt="Goryeo ware">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Goryeo ware</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/korean-3.jpg" alt="Korean blue and white porcelain dish with twelve-sided (dodecagonal) rim, Joseon dynasty. National Museum of Korea.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Korean blue and white porcelain dish with twelve-sided (dodecagonal) rim, Joseon dynasty. National Museum of Korea.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/korean-4.jpg" alt="Korean buncheong ware jar with inlaid (sanggam) peony and scroll motif, Joseon dynasty (15th-16th century). National Museum of Korea, Seoul.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Korean buncheong ware jar with inlaid (sanggam) peony and scroll motif, Joseon dynasty (15th-16th century). National Museum of Korea, Seoul.</figcaption>
+                            </figure>
+                        </li>
+                        <li class="h-full">
+                            <figure class="flex h-full flex-col">
+                                <img class="block w-full h-44 object-contain rounded-md border border-stone-200 bg-stone-100" src="pictures/korean-5.jpg" alt="Korean blue and white porcelain brush holder with openwork cloud and dragon design, Joseon dynasty. National Museum of Korea.">
+                                <figcaption class="mt-2 text-sm leading-relaxed">Korean blue and white porcelain brush holder with openwork cloud and dragon design, Joseon dynasty. National Museum of Korea.</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Application -->
+                <section id="application" aria-labelledby="application-heading">
+                    <h2 id="application-heading">Application</h2>
+                    <section id="electric-insulators" aria-labelledby="electric-insulators-heading">
+                        <h3 id="electric-insulators-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Electric Insulators</h3>
+                        <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                            <figure class="mb-4">
+                                <img src="pictures/app-1.jpg" alt="A string of 8 insulators on a 66 kV transmission line" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                                <figcaption class="mt-2 text-xs text-slate-500">A string of 8 insulators on a 66 kV transmission line</figcaption>
+                            </figure>
+                        </figure>
+                        <p class="mb-4 max-w-prose">
+                            Porcelain has been used for electrical insulators since at least 1878,[59] with another source reporting earlier use of porcelain insulators on the telegraph line between Frankfurt and Berlin.[60] It is widely used for insulators in electrical power transmission system due to its high stability of electrical, mechanical and thermal properties even in harsh environments.[61]
+                        </p>
+                        <p class="mb-4 max-w-prose">
+                            A body for electrical porcelain typically contains varying proportions of ball clay, kaolin, feldspar, quartz, calcined alumina and calcined bauxite. A variety of secondary materials can also be used, such as binders which burn off during firing.[62] UK manufacturers typically fired the porcelain to a maximum of 1200 °C in an oxidising atmosphere,[63] whereas reduction firing is standard practice at Chinese manufacturers.[64]
+                        </p>
+                        <p class="mb-4 max-w-prose">
+                            In 2018, a porcelain bushing insulator manufactured by NGK in Handa, Aichi Prefecture, Japan was certified as the world's largest ceramic structure by Guinness World Records. It is 11.3 m in height and 1.5 m in diameter.[65][66]
+                        </p>
+                        <p class="mb-4 max-w-prose">
+                            The global market for high-voltage insulators was estimated to be worth US$4.95 billion in 2015, of which porcelain accounts for just over 48%.[67]
+                        </p>
+                    </section>
+                    <section id="chemical-porcelain" aria-labelledby="chemical-porcelain-heading">
+                        <h3 id="chemical-porcelain-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Chemical Porcelain</h3>
+                        <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                            <figure class="mb-4">
+                                <img src="pictures/app-2.jpg" alt="Evaporating dishes made of chemical porcelain" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                                <figcaption class="mt-2 text-xs text-slate-500">Evaporating dishes made of chemical porcelain</figcaption>
+                            </figure>
+                        </figure>
+                        <p class="mb-4 max-w-prose">
+                            A type of porcelain characterised by low thermal expansion, high mechanical strength and high chemical resistance. Used for laboratory ware, such as reaction vessels, combustion boats, evaporating dishes and Büchner funnels. Raw materials for the body include kaolin, quartz, feldspar, calcined alumina, and possibly also low percentages of other materials. A number of International standards specify the properties of the porcelain, such as ASTM C515.[68][69]
+                        </p>
+                    </section>
+                    <section id="tiles" aria-labelledby="tiles-heading">
+                        <h3 id="tiles-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Tiles</h3>
+                        <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                            <figure class="mb-4">
+                                <img src="pictures/app-3.jpg" alt="Dakin Building, Brisbane, California, faced with porcelain tiles" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                                <figcaption class="mt-2 text-xs text-slate-500">Dakin Building, Brisbane, California, faced with porcelain tiles</figcaption>
+                            </figure>
+                        </figure>
+                        <p class="mb-4 max-w-prose">
+                            A porcelain tile has been defined as "a ceramic mosaic tile or paver that is generally made by the dust-pressed method of a composition resulting in a tile that is dense, fine-grained, and smooth with sharply formed face, usually impervious and having colors of the porcelain type which are usually of a clear, luminous type or granular blend thereof."[70] Manufacturers are found across the world[71] with Italy being the global leader, producing over 380 million square metres in 2006.[72][73]
+                        </p>
+                        <p class="mb-4 max-w-prose">
+                            Historic examples of rooms decorated entirely in porcelain tiles can be found in several palaces including ones at Galleria Sabauda in Turin, Museo di Doccia in Sesto Fiorentino, Museo di Capodimonte in Naples, the Royal Palace of Madrid and the nearby Royal Palace of Aranjuez.[74] and the Porcelain Tower of Nanjing. More recent examples include the Dakin Building in Brisbane, California and the Gulf Building in Houston, Texas, which when constructed in 1929 had a 21-metre-long (69 ft) porcelain logo on its exterior.[75]
+                        </p>
+                    </section>
+                    <section id="sanitaryware" aria-labelledby="sanitaryware-heading">
+                        <h3 id="sanitaryware-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Sanitaryware</h3>
+                        <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                            <figure class="mb-4">
+                                <img src="pictures/app-4.jpg" alt="Porcelain chamber pots from Vienna." class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                                <figcaption class="mt-2 text-xs text-slate-500">Porcelain chamber pots from Vienna.</figcaption>
+                            </figure>
+                        </figure>
+                        <p class="mb-4 max-w-prose">
+                            Because of its durability, lack of rusting, and impermeability, glazed porcelain has been in use for personal hygiene since at least the third quarter of the 17th century. During this period, porcelain chamber pots were commonly found in higher-class European households, and the term "bourdaloue" was used as the name for the pot.[76]
+                        </p>
+                        <p class="mb-4 max-w-prose">
+                            Whilst modern sanitaryware, such as toilets and washbasins, is made of ceramic materials, porcelain is no longer used and vitreous china is the dominant material.[77] Bath tubs are not made of porcelain, but of enamel on a metal base, usually of cast iron. Porcelain enamel is a marketing term used in the US, and is not porcelain but vitreous enamel.[78]
+                        </p>
+                    </section>
+                    <section id="dental-porcelain" aria-labelledby="dental-porcelain-heading">
+                        <h3 id="dental-porcelain-heading" class="text-xl font-semibold text-slate-900 mt-8 mb-3">Dental Porcelain</h3>
+                        <figure class="sm:float-right sm:ml-6 sm:w-56 mb-4">
+                            <figure class="mb-4">
+                                <img src="pictures/app-5.jpg" alt="Dental porcelain bridge" class="w-full h-40 object-contain rounded-md border border-stone-200 bg-stone-100">
+                                <figcaption class="mt-2 text-xs text-slate-500">Dental porcelain bridge</figcaption>
+                            </figure>
+                        </figure>
+                        <p class="mb-4 max-w-prose">
+                            Dental porcelain is used for crowns, bridges and veneers. A formulation of dental porcelain is 70-85% feldspar, 12-25% quartz, 3-5% kaolin, up to 15% glass and around 1% colourants.[79]
+                        </p>
+                    </section>
+                </section>
+        </article>
+    </main>
+</body>
+</html>

@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic Basics</title>
+    <style>
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Semantic Basics</h1>
     </header>
     <nav>
-        <h2>Navigation</h2>
+        <h2 class="sr-only">Navigation</h2>
         <ul>
-            <li><a href="#index">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#assignment1">Assignment 1</a></li>
             <li><a href="#assignment2">Assignment 2</a></li>
             <li><a href="#assignment3">Assignment 3</a></li>
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="main-section">
             <h2>Semantic Elements</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
@@ -27,6 +40,21 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         </section>
+        <figcaption>
+            <h2>Figure 1: Semantic Elements</h2>
+            <figure>
+                <img src="semantic-elements.png" alt="Semantic Elements">
+                <figcaption>Figure 1: Semantic Elements</figcaption>
+            </figure>
+        </figcaption>
+        <aside>
+            <h2>Aside</h2>
+            <p>Additional information related to the main content.</p>
+        </aside>
     </main>
+    <footer>
+        <h2>Footer</h2>
+        <small>&copy; 2026 Semantic Basics. All rights reserved.</small>
+    </footer>
 </body>
 </html>
