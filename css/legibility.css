@@ -1,9 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #FAFAF9;
+    --color-surface: #FFFFFF;
+    --color-border: #E7E5E4;
+    --color-heading: #0F172A;
+    --color-text: #1E293B;
+    --color-muted: #475569;
+    --color-accent: #0F766E;
+}
 
 body {
-    background: #014B43;
-    color: #F9ECE5;
-    font-family: 'Roboto', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 18px;
-    line-height: 1.2em;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.2;
+}
+
+a:hover, a:focus {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.page-container {
+    margin: 0 auto;
+    max-width: 720px;
 }
