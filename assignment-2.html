@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2: Rocky Mountain National Park</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/legibility.css">
+</head>
+<body class="bg-stone-50 text-slate-800">
+    <!-- Skip link: hidden above the page, drops down on keyboard focus -->
+    <a class="skip-link" href="#overview">Skip to main content</a>
+    <header class="sticky top-0 z-10 bg-stone-50 border-b border-stone-200">
+        <h1 class="sr-only">Joanne's Webpage</h1>
+        <nav class="page-container px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" aria-labelledby="main-navigation-label">
+            <h2 id="main-navigation-label" class="sr-only">Main navigation</h2>
+            <a href="index.html" class="text-xl font-bold text-slate-900">Home</a>
+
+            <ul class="flex gap-7 text-sm text-slate-600">
+                <li><a href="assignment-1.html" class="hover:text-teal-700">Assignment 1</a></li>
+                <li><a href="assignment-2.html" class="hover:text-teal-700 font-semibold text-slate-900" aria-current="page">Assignment 2</a></li>
+                <li><a href="#assignment-3" class="hover:text-teal-700">Assignment 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="page-container px-6">
+        <article aria-labelledby="page-title">
+            <h1 id="page-title" class="text-4xl font-bold text-slate-900 mb-6">Rocky Mountain National Park</h1>
+            <!-- Table of contents -->
+            <nav class="pb-16" aria-labelledby="contents-heading">
+                <h2 id="contents-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Contents</h2>
+                <ol class="list-decimal pl-5 space-y-1">
+                    <li><a href="#overview" class="hover:text-teal-700">Overview</a></li>
+                    <li><a href="#geography" class="hover:text-teal-700">Geography</a></li>
+                    <li><a href="#colorado-parks" class="hover:text-teal-700">Colorado's national parks</a></li>
+                    <li><a href="#favorites" class="hover:text-teal-700">Share your favorite</a></li>
+                </ol>
+            </nav>
+
+            <!-- Overview -->
+            <section id="overview" class="pb-16" aria-labelledby="overview-heading" tabindex="-1">
+                <h2 id="overview-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Overview</h2>
+                <p class="mb-4">
+                    Rocky Mountain National Park is a national park of the United States located approximately 55 mi (89 km) northwest of Denver in north-central Colorado, within the Front Range of the Rocky Mountains. The park is situated between the towns of Estes Park to the east and Grand Lake to the west. The eastern and western slopes of the Continental Divide run directly through the center of the park with the headwaters of the Colorado River located in the park's northwestern region. The main features of the park include mountains, alpine lakes and a wide variety of wildlife within various climates and environments, from wooded forests to mountain tundra.
+                </p>
+                <p class="mb-4">
+                    The Rocky Mountain National Park Act was signed by President Woodrow Wilson on <time datetime="1915-01-26">January 26, 1915</time>, establishing the park boundaries and protecting the area for future generations. The <abbr title="Civilian Conservation Corps">CCC</abbr> (Civilian Conservation Corps) built the main automobile route, Trail Ridge Road, in the 1930s. In <time datetime="1976">1976</time>, <abbr title="United Nations Educational, Scientific and Cultural Organization">UNESCO</abbr> designated the park as one of the first World Biosphere Reserves.
+                </p>
+                <p class="mb-4">
+                    The park has five visitor centers, with park headquarters located at the Beaver Meadows Visitor Center, a National Historic Landmark designed by the Frank Lloyd Wright School of Architecture at Taliesin West.
+                </p>
+            </section>
+
+            <!-- Geography -->
+            <section id="geography" class="clear-both pb-16" aria-labelledby="geography-heading" tabindex="-1">
+                <h2 id="geography-heading" class="inline-flex items-center gap-2 text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">
+                    <span class="material-icons text-teal-700" aria-hidden="true">terrain</span>
+                    Geography
+                </h2>            
+                <p class="mb-4">
+                    Rocky Mountain National Park encompasses 265,461 acres (414.78 sq mi; 1,074.28 km²) of federal land, with an additional 253,059 acres (395.40 sq mi; 1,024.09 km²) of U.S. Forest Service wilderness adjoining the park boundaries. The Continental Divide runs generally north–south through the center of the park, with rivers and streams on the western side of the divide flowing toward the Pacific Ocean while those on the eastern side flow toward the Atlantic.
+                </p>
+                <p class="mb-4">
+                    The headwaters of the Colorado River are located in the park's northwestern region. The park contains approximately 450 miles (724 km) of rivers and streams, 350 miles (563 km) of trails, and 150 lakes.
+                </p>
+                <p class="mb-4">
+                    Rocky Mountain National Park is one of the highest national parks in the nation, with elevations from 7,860 to 14,259 feet (2,396 to 4,346 m), the highest point of which is Longs Peak. Sixty mountain peaks over 12,000 feet (3,658 m) high provide scenic vistas. Several small glaciers and permanent snowfields are found in the high mountain cirques.
+                </p>
+            </section>
+
+            <!-- Data table -->
+            <section id="colorado-parks" class="pb-16" aria-labelledby="colorado-parks-heading" tabindex="-1">
+                <h2 id="colorado-parks-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">Colorado's national parks</h2>
+                <p class="mb-4">
+                    Rocky Mountain is the second-oldest of Colorado's four national parks, and by far the most visited.
+                </p>
+
+                <figure class="overflow-x-auto rounded border border-stone-200 bg-white" aria-labelledby="parks-caption" tabindex="0">
+                    <table class="w-full text-left text-sm">
+                        <caption id="parks-caption" class="px-4 pt-4 pb-2 text-left font-semibold text-slate-900">
+                            Colorado's national parks by date established and size.
+                        </caption>
+                        <thead class="border-b-2 border-slate-600">
+                            <tr>
+                                <th scope="col" class="px-4 py-2">Park</th>
+                                <th scope="col" class="px-4 py-2">Established</th>
+                                <th scope="col" class="px-4 py-2 text-right">Area (acres)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabular-nums">
+                            <tr class="border-b border-stone-200">
+                                <th scope="row" class="px-4 py-2 font-semibold">Rocky Mountain</th>
+                                <td class="px-4 py-2"><time datetime="1915-01-26">Jan 26, 1915</time></td>
+                                <td class="px-4 py-2 text-right">265,807</td>
+                            </tr>
+                            <tr class="border-b border-stone-200 bg-stone-50">
+                                <th scope="row" class="px-4 py-2 font-semibold">Mesa Verde</th>
+                                <td class="px-4 py-2"><time datetime="1906-06-29">Jun 29, 1906</time></td>
+                                <td class="px-4 py-2 text-right">52,485</td>
+                            </tr>
+                            <tr class="border-b border-stone-200">
+                                <th scope="row" class="px-4 py-2 font-semibold">Great Sand Dunes</th>
+                                <td class="px-4 py-2"><time datetime="2004-09-24">Sep 24, 2004</time></td>
+                                <td class="px-4 py-2 text-right">107,342</td>
+                            </tr>
+                            <tr class="border-b border-stone-200 bg-stone-50">
+                                <th scope="row" class="px-4 py-2 font-semibold">Black Canyon of the Gunnison</th>
+                                <td class="px-4 py-2"><time datetime="1999-10-21">Oct 21, 1999</time></td>
+                                <td class="px-4 py-2 text-right">30,780</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="tabular-nums border-t-2 border-slate-600">
+                            <tr>
+                                <th scope="row" class="px-4 py-2">Total</th>
+                                <td class="px-4 py-2"></td>
+                                <td class="px-4 py-2 text-right font-semibold">456,414</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </figure>
+            </section>
+
+            <!-- Comment form -->
+            <section id="favorites" class="pb-16" aria-labelledby="favorites-heading" tabindex="-1">
+                <h2 id="comments-heading" class="flex items-center gap-2 text-xl font-semibold text-slate-900 mb-4">
+                    <span class="material-icons text-teal-700" aria-hidden="true">forum</span>
+                    Visitors' favorites
+                </h2>
+                <p class="mb-6">
+                    Which mountain, trail or park do you love most? Tell other visitors about it.
+                </p>
+
+                <form id="favorite-form" class="rounded border border-stone-200 bg-white p-6 space-y-6">
+                    <fieldset class="space-y-4">
+                        <legend class="text-lg font-semibold text-slate-900 mb-2">About you</legend>
+
+                        <div>
+                            <label for="name" class="block font-semibold text-slate-900">
+                                Name <span class="font-normal text-slate-600">(required)</span>
+                            </label>
+                            <input id="name" name="name" type="text" autocomplete="name" required
+                                   class="mt-1 w-full rounded border border-slate-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-700">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block font-semibold text-slate-900">
+                                Email <span class="font-normal text-slate-600">(required)</span>
+                            </label>
+                            <p id="email-hint" class="text-sm text-slate-600">Your email won't be shown with your comment.</p>
+                            <input id="email" name="email" type="email" autocomplete="email" required
+                                   class="mt-1 w-full rounded border border-slate-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-700">                        </div>
+                        </div>
+                        
+                        <div>
+                            <label for="park" class="block font-semibold text-slate-900">
+                                Favorite park <span class="font-normal text-slate-600">(required)</span>
+                            </label>
+                            <select id="park" name="park" required
+                                    class="mt-1 w-full rounded border border-slate-500 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-700">
+                                <option value="">Choose a park</option>
+                                <option>Rocky Mountain</option>
+                                <option>Mesa Verde</option>
+                                <option>Great Sand Dunes</option>
+                                <option>Black Canyon of the Gunnison</option>
+                                <option>Somewhere else</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="comment" class="block font-semibold text-slate-900">
+                                What makes it your favorite? <span class="font-normal text-slate-600">(required)</span>
+                            </label>
+                            <textarea id="comment" name="comment" rows="4" maxlength="500" required
+                                      class="mt-1 w-full rounded border border-slate-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-700"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="inline-flex items-center gap-2 rounded bg-teal-700 px-5 py-2.5 font-semibold text-white hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:ring-offset-2">
+                        <span class="material-icons" aria-hidden="true">send</span>
+                        Post comment
+                    </button>
+                </form>
+
+                <section class="mt-10" aria-labelledby="comments-heading">
+                    <h3 id="comments-heading" class="text-xl font-semibold text-slate-900 mb-4">Visitors' favorites</h3>
+                    <p id="no-comments" class="text-slate-600">No comments yet. Be the first to share your favorite.</p>
+                    <ol id="comment-list" class="space-y-4" aria-live="polite"></ol>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <footer class="page-container px-6 py-10 border-t border-stone-200 text-sm text-slate-600">
+        <p class="mb-2">
+            Text adapted from the Wikipedia article <cite><a href="https://en.wikipedia.org/wiki/Rocky_Mountain_National_Park" class="underline">Rocky Mountain National Park</a></cite>.
+        </p>
+    </footer>
+</body>
+</html>

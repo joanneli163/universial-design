@@ -5,12 +5,15 @@
     color: #fff;
     font-weight: 700;
     padding: 4px;
-    position: absolute;
-    transform: translateY(-200%);
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    z-index: 50;
 }
 
-.skip-link:focus {
-    transform: translateY(-100%);
+.skip-link:focus-visible {
+    transform: translateY(0);
 }
 
 .skip-link {
