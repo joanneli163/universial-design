@@ -115,3 +115,18 @@ and (max-width: 900px) {
             "footy  footy";
     }
 }
+
+@media screen
+and (min-width: 640px) {
+    .container {
+        grid-template-columns: 
+            1fr;
+        grid-template-areas: 
+            "heady"
+            "navvy"
+            "mainy"
+            "aside1"
+            "aside2"
+            "footy";
+    }
+}
