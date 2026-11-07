@@ -27,9 +27,19 @@
             <p class="mt-2 text-lg text-slate-500">Senior Computer Science Student at CU Boulder</p>
         </header>
 
-        <section class="pb-16" aria-labelledby="about-heading">
-            <h2 id="about-heading" class="inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 mb-4">About Me</h2>
-            <p class="mb-4 max-w-prose">Hello, I'm Joanne, I enjoy reading and hiking in my free time.</p>
+        <section class="pb-16 grid gap-x-8 gap-y-4 sm:grid-cols-[auto_1fr] sm:items-start" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="justify-self-start inline-block text-2xl font-semibold border-b-2 border-teal-700 pb-2 sm:col-start-2">About Me</h2>
+
+            <img src="pictures/avatar.png" alt="Avatar of Joanne"
+                width="160" height="160"
+                class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-2 border-teal-700 sm:col-start-1 sm:row-start-1 sm:row-span-2">
+
+            <p class="max-w-prose mb-4 sm:col-start-2">
+                Hi, I'm Joanne, a senior studying Computer Science at the University of Colorado Boulder. I'm in my final semester and looking forward to graduating soon.                 Outside of class, I work as a software development intern in Boulder, where I help build a model base collaboration platform.
+            </p>
+            <p class="max-w-prose sm:col-start-2">
+                In my free time, I like baking, reading novels, watching dramas, listening to music, and spending time with family and friends.
+            </p>
         </section>
     </main>
 </body>
