@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Accessible grid</title>
-  <link href="css/grid-flex.css" rel="stylesheet">
+  <title>Assignment 3: Accessible CSS Layout</title>
+  <link href="css/legibility.css" rel="stylesheet">
+  <link href="css/assignment-3.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="container">
   <header>
-    <h1>accessible css layout</h1>
+    <h1>Accessible CSS Layout</h1>
   </header>
-  <nav>
+
+  <nav aria-labelledby="main-navigation-label">
+    <h2 id="main-navigation-label" class="sr-only">Main navigation</h2>
     <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="assignment-1.html" class="hover:text-teal-700">Assignment 1</a></li>
+      <li><a href="assignment-2.html" class="hover:text-teal-700">Assignment 2</a></li>
+      <li><a href="assignment-3.html" class="hover:text-teal-700 font-semibold text-slate-900" aria-current="page">Assignment 3</a></li>
     </ul>
   </nav>
-  <main>
+
+  <main id="main" tabindex="-1">
     <section>
       <h2>some words</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolor deserunt harum facilis, consequuntur magnam ut beatae sint possimus ducimus voluptate tempora necessitatibus maiores provident? Expedita quia assumenda id inventore?</p>
@@ -33,18 +37,20 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius perferendis, expedita aut, fuga ipsam laudantium exercitationem accusantium, quod quidem harum nisi, rerum dignissimos cum doloribus deleniti! Et ex, officia delectus.</p>
     </section>
   </main>
-  <aside id="aside1">
-    <h2>aside 1</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam corporis perferendis doloribus nemo eligendi nostrum aperiam. Laboriosam cumque culpa, soluta voluptates quibusdam, delectus consequatur.</p>
-  </aside>
-  <aside id="aside2">
-    <h2>aside 2</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam corporis perferendis doloribus nemo eligendi nostrum aperiam. Laboriosam cumque culpa, soluta voluptates quibusdam, delectus consequatur.</p>
-  </aside>
-  <footer>
-    <small> designed by me for EVERYBODY</small>
-  </footer>
 
-</div> <!-- end container -->
+  <aside id="aside1" aria-labelledby="aside1-heading">
+    <h2 id="aside1-heading">aside 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam corporis perferendis doloribus nemo eligendi nostrum aperiam. Laboriosam cumque culpa, soluta voluptates quibusdam, delectus consequatur.</p>
+  </aside>
+
+  <aside id="aside2" aria-labelledby="aside2-heading">
+    <h2 id="aside2-heading">aside 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam corporis perferendis doloribus nemo eligendi nostrum aperiam. Laboriosam cumque culpa, soluta voluptates quibusdam, delectus consequatur.</p>
+  </aside>
+
+  <footer>
+    <small>Designed by me for everybody</small>
+  </footer>
+  </div>
 </body>
 </html>
