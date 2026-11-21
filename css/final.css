@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #FAFAF9;          /* stone-50 */
+    --color-surface: #FFFFFF;
+    --color-border: #E7E5E4;      /* stone-200 */
+    --color-heading: #0F172A;     /* slate-900 */
+    --color-text: #1E293B;        /* slate-800 */
+    --color-muted: #475569;       /* slate-600 */
+    --color-accent: #0F766E;      /* teal-700 */
+    --color-accent-dark: #115E59; /* teal-800 */
+}
+
 /* skip link */
 
 .skip-link {
@@ -19,6 +32,39 @@
     transform: translateY(0);
 }
 
+body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--color-heading);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.2;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover {
+    color: var(--color-accent-dark);
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -26,4 +72,46 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
+}
+
+/* Section headings keep the teal underline */
+main h2 {
+    display: inline-block;
+    font-size: 1.75rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 3px solid var(--color-accent);
+}
+
+main h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.prose {
+    max-width: 38rem;
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--color-heading);
+    color: #E2E8F0;
+    padding: 2rem 1.25rem;
+    font-size: 1rem;
+}
+
+footer p {
+    max-width: 64rem;
+    margin: 0 auto 0.5rem;
+}
+
+footer a,
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer :focus-visible {
+    outline-color: #FFFFFF;
 }
